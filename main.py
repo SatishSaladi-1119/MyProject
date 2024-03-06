@@ -1213,9 +1213,25 @@ sorting = [3,5,9,8,2,1]
 # x <<= 3
 # print(x)
 
-x = [1,2]
-y = [1,2]
-z = x
-print(x is z)
-print(x is y)
-print(x == y)
+# x = [1,2]
+# y = [1,2]
+# z = x
+# print(x is z)
+# print(x is y)
+# print(x == y)
+
+# count = 10
+# while count > 0:
+#     count -= 1
+#     if count == 3:
+#         continue
+#     print(count)
+    
+lista = [10,4,2,29,49,20]
+# print(lista)
+for i in range(0,len(lista)-1):
+    for i in range(0,len(lista)-1):
+        if lista[i] > lista[i + 1]:
+            lista[i], lista[i + 1] = lista[i + 1], lista[i]
+print(lista)
+print(lista[-2])
